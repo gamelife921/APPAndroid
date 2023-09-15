@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
                     //수신 스레드 실행
                     //---------------------------------------
                     //LED
-                    recvLedWorker.RunWorkerAsync();
+                    recvLedWorker = new BackgroundWorker();
                     recvLedWorker.DoWork += recvLedInfo;
                     //TMP
                     recvTmpWorker = new BackgroundWorker();
